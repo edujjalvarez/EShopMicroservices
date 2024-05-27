@@ -4,9 +4,9 @@ public class CreateProductCommandValidator : AbstractValidator<CreateProductComm
 {
     public CreateProductCommandValidator()
     {
-        RuleFor(x => x.Name).NotEmpty().WithMessage("Name is required");
-        RuleFor(x => x.Categories).NotEmpty().WithMessage("Categories is required");
-        RuleFor(x => x.ImageFile).NotEmpty().WithMessage("ImageFile is required");
-        RuleFor(x => x.Price).GreaterThan(0).WithMessage("Price must be greater than 0");
+        RuleFor(c => c.Name).NotEmpty().WithMessage("Name is required");
+        RuleFor(c => c.Categories).NotEmpty().WithMessage("Categories is required");
+        RuleFor(c => c.ImageFile).NotEmpty().WithMessage("ImageFile is required");
+        RuleFor(c => c.Price).GreaterThan(0).WithMessage("Price must be greater than 0");
     }
 }

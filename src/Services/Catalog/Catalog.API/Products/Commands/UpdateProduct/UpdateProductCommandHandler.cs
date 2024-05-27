@@ -9,7 +9,7 @@ internal class UpdateProductCommandHandler(
         logger.LogInformation("UpdateProductCommandHandler.Handle called with {@Command}", command);
         var product = await session.LoadAsync<Product>(command.Id, cancellationToken);
         if (product is null)
-            throw new ProductNotFoundException();
+            throw new ProductNotFoundException(command.Id);
         product.Name = command.Name;
         product.Categories = command.Categories;
         product.Description = command.Description;
