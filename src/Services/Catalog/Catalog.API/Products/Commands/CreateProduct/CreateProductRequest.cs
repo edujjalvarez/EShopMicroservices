@@ -1,9 +1,8 @@
 ﻿namespace Catalog.API.Products.Commands.CreateProduct;
 
-public record CreateProductCommand(
-    Guid Id,
+public record CreateProductRequest(
     string Name,
     List<string> Categories,
     string Description,
     string ImageFile,
-    decimal Price) : ICommand<CreateProductResult>;
+    decimal Price);

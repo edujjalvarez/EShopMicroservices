@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{1854BECA-2DB3-46DC-89F8-B242AE277CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{71258C74-741E-4FF4-823C-DE88007F0089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{71258C74-741E-4FF4-823C-DE88007F0089}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{B4730FD7-69CD-42BD-8B78-9FF69CF72C26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{69090313-1C56-4B74-A921-13302CF6A90B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{69090313-1C56-4B74-A921-13302CF6A90B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{17AD1EBD-50F0-47B3-BB28-6BCDF1D05361}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{69090313-1C56-4B74-A921-13302CF6A90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69090313-1C56-4B74-A921-13302CF6A90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69090313-1C56-4B74-A921-13302CF6A90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17AD1EBD-50F0-47B3-BB28-6BCDF1D05361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AD1EBD-50F0-47B3-BB28-6BCDF1D05361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AD1EBD-50F0-47B3-BB28-6BCDF1D05361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AD1EBD-50F0-47B3-BB28-6BCDF1D05361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
