@@ -9,7 +9,7 @@ services:
       - POSTGRES_DB=CatalogDb
     restart: always
     ports:
-        - "6432:5432"
+      - "6432:5432"
     volumes:
       - postgres_catalog:/var/lib/postgresql/data/
 
@@ -21,7 +21,7 @@ services:
       - POSTGRES_DB=BasketDb
     restart: always
     ports:
-        - "7432:5432"
+      - "7432:5432"
     volumes:
       - postgres_basket:/var/lib/postgresql/data/
 
@@ -29,7 +29,16 @@ services:
     container_name: distributedcache
     restart: always
     ports:
-        - "7379:6379"
+      - "7379:6379"
+
+  orderdb:
+    container_name: orderdb
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=SwN12345678
+    restart: always
+    ports:
+      - "1433:1433"
 
   catalog.api:
     environment:
